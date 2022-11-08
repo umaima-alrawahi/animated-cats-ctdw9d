@@ -95,6 +95,7 @@ li {
   animation-iteration-count: infinite;
   animation-duration: 1s;
   animation-fill-mode: both;
+  border-radius: 50%;
 }
 
 .joyful {
