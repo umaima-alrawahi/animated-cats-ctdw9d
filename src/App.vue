@@ -55,7 +55,8 @@ const sadCat = {
       I'm joyful and red
     </li>
     <li>
-      <span class="cat" :class="cheekyCat.anim" style="background-color: green"
+      <span class="cat" :class="cheekyCat.anim" 
+      :style="{backgroundColor: cheekyCat.color}"
         >😼</span
       >
       I'm twisty and green
@@ -72,8 +73,8 @@ const sadCat = {
     <li>
       <span
         class="cat"
-        :class="{ wobbly: sadCat.isClass }"
-        style="background-color: blue"
+        :class="{ wobbly: sadCat.isClass('wobbly') }"
+        :style="{ backgroundColor: sadCat.isColor('blue') ? 'blue' : ''}"
         >😿</span
       >
       I'm wobbly and blue
